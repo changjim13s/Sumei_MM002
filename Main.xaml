@@ -82,7 +82,6 @@
       <AssemblyReference>System.Memory</AssemblyReference>
       <AssemblyReference>UiPath.Database</AssemblyReference>
       <AssemblyReference>UiPath.UIAutomationCore</AssemblyReference>
-      <AssemblyReference>System.Runtime.WindowsRuntime</AssemblyReference>
     </scg:List>
   </TextExpression.ReferencesForImplementation>
   <Flowchart sap:VirtualizedContainerService.HintSize="773.6,1084.8" sap2010:WorkflowViewState.IdRef="Flowchart_2">
@@ -237,24 +236,12 @@
                           </sap:WorkflowViewStateService.ViewState>
                           <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" DisplayName="Invoke SAPLOGIN workflow" sap:VirtualizedContainerService.HintSize="200,52" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_15" UnSafe="False" WorkflowFileName="SAPLOGIN.xaml">
                             <ui:InvokeWorkflowFile.Arguments>
-                              <InArgument x:TypeArguments="x:String" x:Key="CONNT_NAME">
-                                <mva:VisualBasicValue x:TypeArguments="x:String" ExpressionText="CONNT_NAME" />
-                              </InArgument>
-                              <InArgument x:TypeArguments="x:String" x:Key="CLIENT">
-                                <mva:VisualBasicValue x:TypeArguments="x:String" ExpressionText="CLIENT" />
-                              </InArgument>
-                              <InArgument x:TypeArguments="x:String" x:Key="ID">
-                                <mva:VisualBasicValue x:TypeArguments="x:String" ExpressionText="ID" />
-                              </InArgument>
-                              <InArgument x:TypeArguments="x:String" x:Key="PASSWORD">
-                                <mva:VisualBasicValue x:TypeArguments="x:String" ExpressionText="PASSWORD" />
-                              </InArgument>
-                              <InArgument x:TypeArguments="x:String" x:Key="LANGU">
-                                <mva:VisualBasicValue x:TypeArguments="x:String" ExpressionText="LANGU" />
-                              </InArgument>
-                              <OutArgument x:TypeArguments="ui:Window" x:Key="SAP_WIND">
-                                <mva:VisualBasicReference x:TypeArguments="ui:Window" ExpressionText="SAP_WIND" />
-                              </OutArgument>
+                              <InArgument x:TypeArguments="x:String" x:Key="CONNT_NAME">[CONNT_NAME]</InArgument>
+                              <InArgument x:TypeArguments="x:String" x:Key="CLIENT">[CLIENT]</InArgument>
+                              <InArgument x:TypeArguments="x:String" x:Key="ID">[ID]</InArgument>
+                              <InArgument x:TypeArguments="x:String" x:Key="PASSWORD">[PASSWORD]</InArgument>
+                              <InArgument x:TypeArguments="x:String" x:Key="LANGU">[LANGU]</InArgument>
+                              <OutArgument x:TypeArguments="ui:Window" x:Key="SAP_WIND">[SAP_WIND]</OutArgument>
                             </ui:InvokeWorkflowFile.Arguments>
                             <sap:WorkflowViewStateService.ViewState>
                               <scg:Dictionary x:TypeArguments="x:String, x:Object">
